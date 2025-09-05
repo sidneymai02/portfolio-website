@@ -1,0 +1,148 @@
+/* ------- Projects Container ------- */
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  /* fluid padding */
+  padding: clamp(1rem, 5vw, 2rem) clamp(1rem, 5vw, 2rem);
+  /* offset for a fixed navbar (adjust values to match your navbar height) */
+  margin-top: 80px;
+  background-color: #070731;
+  color: #E0E1DD;
+  min-height: 80vh;
+  border-radius: 16px;
+  max-width: 1200px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* ------- Header Section ------- */
+.projects-header {
+  width: 100%;
+  /* allow it to shrink and grow */
+  max-width: clamp(320px, 90vw, 800px);
+  margin-bottom: clamp(1rem, 5vw, 2rem);
+  text-align: center;
+  padding: 0 clamp(0.5rem, 5vw, 1rem);
+  box-sizing: border-box;
+}
+
+.projects-header h1 {
+  font-size: clamp(1.5rem, 6vw, 2.5rem);
+  color: #4CC9F0;
+  margin-bottom: clamp(0.5rem, 2vw, 1rem);
+}
+
+.projects-header p {
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  line-height: 1.5;
+  color: #cfd1d7;
+}
+
+/* ------- Grid of Project Cards ------- */
+.projects-grid {
+  /* min‐gap: .5rem; fluid: 2vw; max‐gap: 1rem */
+  gap: min(4vw, 1rem);
+
+  /* the rest of your grid rules… */
+  display: grid;
+  grid-template-columns: repeat(auto-fit,
+    minmax(clamp(180px, 40vw, 300px), 1fr));
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  justify-items: center;
+}
+
+
+
+
+/* ------- Individual Project Card ------- */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  /* cap card width but allow fluid shrink */
+  max-width: clamp(300px, 45vw, 700px);
+  padding: clamp(1rem, 4vw, 1.5rem);
+  background-color: #1B263B;
+  border-radius: clamp(8px, 1vw, 14px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Title inside card */
+.project-card h2 {
+  font-size: clamp(1.2rem, 5vw, 1.6rem);
+  color: #4CC9F0;
+  margin-bottom: clamp(1rem, 2vw, 1.5rem);
+}
+
+/* Description inside card */
+.project-card p {
+  font-size: clamp(0.9rem, 3vw, 1rem);
+  line-height: 1.4;
+  color: #cfd1d7;
+  margin-bottom: clamp(1.2rem, 3vw, 2rem);
+}
+
+/* ------- Links Section ------- */
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(0.5rem, 2vw, 1rem);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.project-links a {
+  flex: 1 1 auto;
+  /* ensure buttons shrink but don’t disappear */
+  min-width: clamp(100px, 30vw, 200px);
+  background-color: #4CC9F0;
+  color: #070731;
+  text-align: center;
+  padding: clamp(0.4rem, 2vw, 0.8rem)
+           clamp(0.8rem, 4vw, 1.2rem);
+  border-radius: clamp(4px, 1vw, 8px);
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+  box-sizing: border-box;
+}
+
+.project-links a:hover {
+  background-color: #38a8cf;
+  transform: translateY(-2px);
+}
+
+/* ------- Ultra-Small Adjustments ------- */
+@media (max-width: 400px) {
+  .projects-container {
+    padding: clamp(1rem, 8vw, 2rem);
+    padding-top: clamp(70px, 12vh, 140px);
+  }
+
+  .projects-header h1 {
+    font-size: clamp(1.3rem, 7vw, 2rem);
+  }
+
+  .project-card {
+    padding: clamp(0.8rem, 4vw, 1.2rem);
+  }
+
+  .project-links a {
+    font-size: clamp(0.75rem, 3vw, 0.9rem);
+    padding: clamp(0.3rem, 3vw, 0.6rem)
+             clamp(0.6rem, 5vw, 1rem);
+  }
+}

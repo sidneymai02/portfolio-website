@@ -1,0 +1,102 @@
+.experience-container {
+  padding: 4rem 2rem;
+  width: 90%;
+  max-width: 1200px;
+  margin-top: 80px; /* to clear navbar */
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+  gap: 2rem;
+  color: #E0E1DD;
+  background-color: #070731;
+}
+
+.experience-title {
+  font-size: 2.5rem;
+  color: #4CC9F0;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.experience-subtitle {
+  font-size: 1.2rem;
+  color: #A9B7C6;
+  margin-bottom: 2.5rem;
+}
+
+/* Cards */
+.experience-card {
+  background-color: #1B263B;
+  border-left: 5px solid #4CC9F0;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.5);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.role {
+  font-size: 1.5rem;
+  color: #E0E1DD;
+}
+
+.status-badge {
+  background: #2ecc71;
+  color: #0D1B2A;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.company {
+  font-size: 1.1rem;
+  color: #A9B7C6;
+  margin-top: 0.3rem;
+}
+
+.date {
+  font-size: 0.95rem;
+  color: #778DA9;
+  display: block;
+  margin: 0.5rem 0 1rem 0;
+}
+
+/* Details */
+.experience-details {
+  margin-left: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.experience-details li {
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+}
+
+/* Tech Pills */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-pill {
+  background-color: #070731;
+  border: 1px solid #4CC9F0;
+  color: #E0E1DD;
+  padding: 0.3rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.tech-pill:hover {
+  background-color: #4CC9F0;
+  color: #0D1B2A;
+  transform: translateY(-2px);
+}

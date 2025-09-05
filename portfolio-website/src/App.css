@@ -1,0 +1,67 @@
+/* Root app container */
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;  /* don’t center everything */
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 1rem;                 /* give breathing room */
+  background: #111;
+  box-sizing: border-box;
+}
+
+/* Override index.css body rules so we can truly shrink */
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  /* Undo the forced flex/centering and min-width */
+  display: block !important;
+  place-items: initial !important;
+  min-width: 0 !important;
+
+  width: 100%;
+  height: auto;                  /* allow content taller than viewport */
+  font-family: "Tinos", serif;
+  overflow-x: hidden;            /* prevent sideways scroll */
+  overflow-y: auto;              /* allow vertical scroll */
+
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Navbar mobile collapse */
+@media (max-width: 815px) {
+  .menuItems {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 0;
+    min-width: auto;
+  }
+
+  .menuItems li {
+    margin: 1rem 0;
+  }
+
+  .menuItems a {
+    font-size: 18px;
+  }
+
+  #root {
+    padding: 0.5rem; /* reduce padding for smaller screens */
+  }
+}
+
+/* Projects grid: switch to one column on narrow screens */
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
