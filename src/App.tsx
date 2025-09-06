@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import ContactMe from "./Pages/ContactMe";
 import Home from "./Pages/Home";
 import ProfessionalExperience from "./Pages/ProfessionalExperience";
@@ -8,9 +8,8 @@ import "./App.css";
 
 function App() {
   return (
-    <Router basename="/portfolio-website">
+    <Router>
       <DefaultTopNavBar />
-
       <Routes>
         <Route path="/" element={<Navigate to="/home" replace />} />
         <Route path="/home" element={<Home />} />
