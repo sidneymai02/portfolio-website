@@ -48,7 +48,7 @@ function Home() {
                     </p>
                 </div>
                 <div className="hero-image">
-                    <img src="src\assets\me.jfif" alt="Picture of me" />
+                    <img src="me.jfif" alt="Picture of me" />
                 </div>
             </section>
 
