@@ -13,7 +13,7 @@ function ContactMe() {
   const recaptchaRef = useRef<ReCAPTCHA>(null);
 
   const siteKey = import.meta.env.VITE_SITE_KEY;
-  console.log("Loaded reCAPTCHA site key:", siteKey);
+  const formUrl = `https://formspree.io/f/${import.meta.env.VITE_FORM_ID}`;
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -56,7 +56,7 @@ function ContactMe() {
     setStatus("Sending...");
 
     try {
-      const response = await fetch("https://formspree.io/f/mandawnr", {
+      const response = await fetch(formUrl, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
