@@ -1,5 +1,6 @@
 import "../Pages-CSS/Home.css";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import Obfuscate from "react-obfuscate";
 
 function Home() {
     return (
@@ -13,15 +14,23 @@ function Home() {
                         Cybersecurity Professional & Software Engineer | M.S. Cybersecurity @ GaTech
                     </h3>
                     <section className="contact-info">
-                        <a href="mailto:sidneymai.business@gmail.com" target="_blank" rel="noopener noreferrer" className="pill link-pill">
-                            <FaEnvelope size={20} style={{ marginRight: "0px" }} />
-                        </a>
-                        <a href="https://www.linkedin.com/in/sidney-mai/" target="_blank" rel="noopener noreferrer" className="pill link-pill">
-                            <FaLinkedin size={20} style={{ marginRight: "0px" }} />
-                        </a>
-                        <a href="https://github.com/sidneymai02" target="_blank" rel="noopener noreferrer" className="pill link-pill">
-                            <FaGithub size={20} style={{ marginRight: "0px" }} />
-                        </a>
+                        <span className="pill link-pill">
+                            <Obfuscate email="sidneymai.business@gmail.com">
+                                <FaEnvelope size={20} />
+                            </Obfuscate>
+                        </span>
+
+                        <span className="pill link-pill">
+                            <Obfuscate href="https://www.linkedin.com/in/sidney-mai/">
+                                <FaLinkedin size={20} />
+                            </Obfuscate>
+                        </span>
+
+                        <span className="pill link-pill">
+                            <Obfuscate href="https://github.com/sidneymai02">
+                                <FaGithub size={20} />
+                            </Obfuscate>
+                        </span>
                     </section>
                     <div className="roles-container">
                         <span className="role-pill">Cybersecurity Professional</span>
@@ -39,7 +48,7 @@ function Home() {
                     </p>
                 </div>
                 <div className="hero-image">
-                    <img src="\src\assets\me.jfif" alt="Picture of me" />
+                    <img src="src\assets\me.jfif" alt="Picture of me" />
                 </div>
             </section>
 
