@@ -1,5 +1,4 @@
 import "../Pages-CSS/ContactMe.css";
-import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { useState } from "react";
 
 function ContactMe() {
