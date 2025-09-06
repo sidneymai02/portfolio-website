@@ -152,6 +152,11 @@
   margin: 0;
 }
 
+.icon-wrapper svg {
+  width: 25px;
+  height: 25px;
+}
+
 /* ===== Mobile Layout ===== */
 @media (max-width: 768px) {
   .hero-section {

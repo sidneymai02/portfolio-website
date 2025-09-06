@@ -16,19 +16,25 @@ function Home() {
                     <section className="contact-info">
                         <span className="pill link-pill">
                             <Obfuscate email="sidneymai.business@gmail.com">
-                                <FaEnvelope size={25} />
+                                <span className="icon-wrapper">
+                                    <FaEnvelope />
+                                </span>
                             </Obfuscate>
                         </span>
 
                         <span className="pill link-pill">
                             <Obfuscate href="https://www.linkedin.com/in/sidney-mai/">
-                                <FaLinkedin size={25} />
+                                <span className="icon-wrapper">
+                                    <FaLinkedin />
+                                </span>
                             </Obfuscate>
                         </span>
 
                         <span className="pill link-pill">
                             <Obfuscate href="https://github.com/sidneymai02">
-                                <FaGithub size={25} />
+                                <span className="icon-wrapper">
+                                    <FaGithub />
+                                </span>
                             </Obfuscate>
                         </span>
                     </section>
