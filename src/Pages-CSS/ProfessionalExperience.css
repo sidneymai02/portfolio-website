@@ -100,3 +100,50 @@
   color: #0D1B2A;
   transform: translateY(-2px);
 }
+
+/* Button container */
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+/* Base button style */
+.action-button {
+  display: inline-block;
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* GitHub button */
+.github-button {
+  background-color: #1B263B;
+  color: #4CC9F0;
+  border: 1px solid #4CC9F0;
+}
+
+.github-button:hover {
+  background-color: #4CC9F0;
+  color: #070731;
+  transform: translateY(-2px);
+}
+
+/* Back button */
+.back-button {
+  background-color: #4CC9F0;
+  color: #070731;
+  border: 1px solid #1B263B;
+}
+
+.back-button:hover {
+  background-color: #3a9bdc;
+  color: #F1FAEE;
+  transform: translateY(-2px);
+}

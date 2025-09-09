@@ -1,0 +1,110 @@
+.project-detail {
+  padding: 3rem;
+  width: 90%;
+  max-width: 1200px;
+  margin: 80px auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  background-color: #070731;
+  color: #E0E1DD;
+  box-sizing: border-box;
+}
+
+.project-detail h1 {
+  font-size: 2.5rem;
+  color: #4CC9F0;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  border-bottom: 2px solid #4CC9F0;
+  padding-bottom: 0.5rem;
+}
+
+.project-detail p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.project-detail strong {
+  color: #F1FAEE;
+}
+
+.project-detail ul {
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.project-detail ul li {
+  margin-bottom: 0.75rem;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.project-detail ul li::marker {
+  color: #4CC9F0;
+}
+
+.project-detail a {
+  color: #4CC9F0;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-detail a:hover {
+  color: #3a9bdc;
+  text-decoration: underline;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.tech-pill {
+  background-color: #070731;
+  border: 1px solid #4CC9F0;
+  color: #E0E1DD;
+  padding: 0.3rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.tech-pill:hover {
+  background-color: #4CC9F0;
+  color: #070731;
+  transform: translateY(-2px);
+}
+
+.buttons-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(0.4rem, 1.5vw, 0.8rem);
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.buttons-row a {
+  flex: 0 1 auto;
+  min-width: clamp(80px, 20vw, 140px); /* smaller base */
+  padding: clamp(0.3rem, 1.5vw, 0.6rem) clamp(0.6rem, 3vw, 1rem);
+  font-size: clamp(0.75rem, 1.8vw, 0.9rem); /* slightly smaller text */
+  background-color: #4CC9F0;
+  color: #070731;
+  text-align: center;
+  border-radius: clamp(4px, 1vw, 8px);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+  box-sizing: border-box;
+}
+
+.buttons-row a:hover {
+  background-color: #38a8cf;
+  transform: translateY(-2px);
+}

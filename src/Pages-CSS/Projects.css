@@ -94,6 +94,30 @@
   margin-bottom: clamp(1.2rem, 3vw, 2rem);
 }
 
+/* Unordered list inside card */
+.project-card ul {
+  padding-left: 1.2rem;
+  margin-bottom: clamp(1rem, 2vw, 1.5rem);
+  color: #cfd1d7;
+  font-size: clamp(0.9rem, 3vw, 1rem);
+  line-height: 1.5;
+}
+
+/* List items */
+.project-card ul li {
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+/* Optional: Custom bullet style */
+.project-card ul li::before {
+  content: "•";
+  position: absolute;
+  left: -1.2rem;
+  color: #4CC9F0;
+  font-weight: bold;
+}
+
 /* ------- Links Section ------- */
 .project-links {
   display: flex;

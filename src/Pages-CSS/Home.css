@@ -96,8 +96,8 @@
 }
 
 .role-pill {
-  background-color: #1B263B;
-  color: #E0E1DD;
+  background-color: #070731;
+  border: 1px solid #4CC9F0;
   font-size: clamp(0.8rem, 2vw, 1rem);
   padding: clamp(0.3rem, 2vw, 0.6rem) clamp(0.8rem, 4vw, 1rem);
   border: clamp(1px, 1vw, 2px) solid #4CC9F0;
